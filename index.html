@@ -1,54 +1,111 @@
+<!--index.html page of Product Page for Classique Winery
+Created by Zib Marshall, 2016
+File is based on SMWE wineries websites including Chateau Ste Michelle, Columbia Crest, 14 Hands, Red Diamond, Erath, etc -->
+
+
 <!doctype html>
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- TODO: Add proper head tag to provide a page description for search
-             engines. -->
-        <title>API Superstore</title>
-        <!-- Bootstrap CSS Framework -->
-        <!-- You can remove the ``link`` tags below if you don't want to use
-             Bootstrap with your site. If you choose to use Bootstrap, be sure
-             to reference the resources and the Bootstrap official
-             documentation: http://getbootstrap.com.
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Zib Marshall">
+        <meta name="description" content="A final project for WATS1010 at Seattle University">
+        <meta name="keywords" content="Classique Winery, Classique wines, red wine, white wine, Walla Walla">
+        <title>Classique Winery</title>
+  <!--Removed bootstrap coding, for now-->
+      
+        <link rel="stylesheet" media="screen" href="style.css">
+        <link rel="shortcut icon" href="classique.ico" type="image/x-icon">
+        <link rel="apple-icon" sizes="72x72" href="apple-icon.png">
+    </head>  
+  
+  <!--Begin Body-->
+    <body class="primary">
+			
+			<div id="container">
+  <!--Begin Header // Add links, logo -->
+				<div class="heading">
+						<header>
+									<div id="logo">
+												<img src="images/logo.png">
+									</div>
+									<div id="brand_name">
+												<h1 class="brand">Classique Winery</h1>
+												<h2 class="tagline">Our Passion fits in a glass</h2>
+									</div>
+          				<nav>
+          					<ul class="navigation">
+												<li><a href="index.html" class="active">Home</a></li>
+												<li><a href="about.html">About Us</a></li> 
+												<li><a href="vineyard.html">Vineyards</a></li>
+												<li><a href="club.html">Wine Club</a></li>
+												<li><a href="shop.html">Shop</a></li>
+										</ul>
+									</nav>
+					</header> 
+					</div>
+	<!--End Header area-->
+    		
+							
+	<!--Begin wine club information-->
+				<div id="below_header">
+					<div id="image_wrap">
+						<img src="images/wine-sun2.png"/>
+					</div>
+					
+        	<div id="content_wrap">		
+        			<div class="join_us">
+									<a href="url(club.html)" class="club_link">
+											<img src="images/hellenic.jpg" alt="club_link"></a>
+									<div class="club_details">
+											<h2> Join our Hellenic Wine Club </h2>
+														<p>Be part of our of growing online community</p>
+														<p>You'll receive news of our exclusive wines.</p>
+														<p>Get Member Discounts on our wines &#40;Up to 40% off!&#41;</p>
+														<p>And get early notices for our Harvest and Concerts in the Vineyard</p>
+															<a href="club.html">Learn more</a>
+							</div>
+							</div>
+					</div>
+					
+	<!--Add mailing list link-->
+          	<div class="mailing">
+            			<h2><a href="mailing-list.html">Join Our Mailing List</a></h2>       
+          	</div>
 
-             Please Note: This repo does not include the Bootstrap Javascript
-             plugins, so you cannot use the features documented under
-             "Javascript" on the Bootstrap documentation site. -->
-        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css">
-        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-theme.css">
-        <!-- End Bootstrap CSS Framework -->
+	<!--Begin testimonials-->
+       		<aside id="testimonials">
+							<div id="people">
+         					<div id="kudos">
+												<p><q>Superb wine</q>--Nayeli M., Seattle, WA</p>
+												<p><q>Classique Winery is true to it's name - a classique!</q>--Jennifer L., Los Angeles, CA</p>
+												<p><q>These are truly remarkable wines, I drink them all the time!</q>--Charles S., New York, NY</p>
+         					</div>
 
-        <!-- TODO: replace favicon, apple-touch-icon, and tile images to best
-             support bookmarking. -->
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <link rel="favicon" href="favicon.ico">
+							</div>
+					</aside>
+   <!--End testimonials--> 
+				</div>
+      <!--Begin footer-->
+      
+       <di id="footer">
 
-    </head>
-    <body>
-        <!-- Note: If you do not see a lamp icon in the heading below
-             when you view this file in a web browser, then there is an issue
-             with how Bootstrap is linked to this page. -->
-        <h1><span class="glyphicon glyphicon-lamp"></span> Hello World!</h1>
-        <!-- TODO: Populate this page with all the content you deem
-             necessary to create a compelling product page! -->
+	     <ul class="social">
+						<li><a href="http://www.facebook.com" target="_blank" class="facebook">Facebook</a></li>
+						<li><a href="http://www.twitter.com" target="_blank" class="twitter">Twitter</a></li>
+						<li><a href="http://www.youtube.com" target="_blank" class="youtube">YouTube</a></li>
+						<li><a href="mailing-list.html" class="mailingList">Join Our Mailing List</a></li>
+	     </ul>
+     
+	
+	
+      <div class="responsibility">
+      </div>
+      <!--End footer-->      
 
-        <!-- TODO: Create an area to put the explainer video. -->
-
-        <!-- TODO: Create an area to put the long product description. -->
-
-        <!-- TODO: Create an area to put customer testimonials. -->
-
-        <!-- TODO: Create an area to show features. -->
-
-        <!-- TODO: Create an area to show company contact info (phone,
-             location, etc.) -->
-
-        <!-- TODO: Create an area that allows users to Share links to the
-             page. -->
-
-        <!-- TODO: Create a call to action link to get users to sign up for the
-             service. -->
+      <!--End body-->
+			</div>
+				 </div>
     </body>
 </html>

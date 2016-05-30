@@ -1,0 +1,215 @@
+/* Classique Winery product page */
+/* This file is based on serveral wine websites including chateau ste michell, red diamond, 14 hands, northstar, erath, etc */
+
+
+/*Basic Elements*/
+html {
+  margin: 0;
+  padding: 0;
+}
+
+/*Added basic body elements including:font, line height, background color*/
+body {
+  width: 1260px;
+  font-family: optima, segoe, calibri, sans-serif;
+  font-size: 18px;
+  color: #8B8B3F;
+  line-height: 1.15;
+  margin: 2px;
+  padding-bottom: 10px;
+  background-color: #d4d495;
+}
+
+/* Add paragraph styling including font, text align etc*/
+
+p {
+  font-size: 15.5px;
+  font-family: calibri, sans-serif;
+  text align: left;
+  line-height: 1.18;
+  margin: 0 0 15px 0;
+  padding: 0;
+}
+
+/* Add h1 and h2 styling including style, size, color, etc*/
+h1 {
+  font-size: 36px;
+  font-style: italic;
+  margin: 0;
+  padding: 0;
+  color: #591125;
+}
+h2 {
+  font-size: 24px;
+  font-family: cursive, fantasy;
+  margin: 0;
+  padding: 0;
+  color: rgb(143,90,105);
+}
+
+/*Added link styling including font, decoration, color*/
+a:link {
+  font-size: 16px;
+  font-weight: normal;
+  text-decoration: underline;
+  color: blue;
+}
+a:visited {
+  font-weight: bold;
+  text-decoration: underline;
+  color: #8F5A69;
+}
+a:hover, a:focus, a:active {
+  text-decoration: underline;
+  color: #591125;
+}
+/*End basic elements*/
+
+/* Begin header styling */
+
+/*Add container position and margin*/
+div#container {
+  min-width: 1100px;
+  position: relative;
+}
+
+/*Add styling to heading including height and background color*/
+.heading {
+  position: relative;
+  z-index: 100;
+  width: 1270px;
+  height: 175px;
+  margin: 0;
+  padding: 0;
+  background-color: #8B8B3F;
+}
+/*Add styling to logo including float, position, margins*/
+div#logo {
+  float: left;
+  position: relative;
+  margin: 20px 10px 0 0;
+  padding; 0;
+}
+/*Add styling to h1/h2 including margins, text indent*/
+h1.brand {
+  text-indent: 30px;
+  padding: 0;
+}
+h2.tagline {
+  text-indent: 80px;
+  margin-top: 8px;
+  padding: 0;
+}
+/*Add navigation styling including list style type, margins, text align, display*/
+
+.navigation {
+  list-style-type: none;
+  margin: 68px 0 10px 810px;
+  padding: 0;
+}
+.navigation li {
+  display: inline;
+  width: 300px;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px;
+  margin: 0;
+  background-color: #ffffe6;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+/* End Header styling */
+
+/* Begin Footer styling */
+
+#footer {
+  clear: both;
+  position: relative;
+  z-index: 2;
+  color: #313020;
+  font-size: 16px;
+  padding: 20px 0 60px 50px;
+}
+#footer .social {
+  display: inline-block;
+  margin-bottom: 4px;
+}
+#footer ul li {
+  float: left;
+  list-style-type: none;
+  padding-right: 4px;
+  margin-bottom: 4px;
+}
+#footer .facebook {
+  background-image: url("icons/social_sprites.png") top left no-repeat;
+  height: 20px;
+  width: 22px;
+  display: block;
+  margin-right: 3px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*  Begin HOME PAGE styling  */
+
+
+/*Add styling to img wine-sun including position*/
+#image_wrap {
+  position: absolute;
+    top: 180px;
+    left: 310px;  
+}
+.join_us {
+  float: left;
+  width: 300px;
+  margin: 5px;
+  text-align: center;
+  color: #8B8B3F;
+}
+.join_us img {
+  position: relative;
+  margin: 10px 0 10px 0;
+
+}
+.club_details {
+  width: 210px;
+  height: 400px;
+  display: inline-block;
+  padding-left: 10px;
+}
+.club_details h2 {
+  margin: 5px 0 5px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
