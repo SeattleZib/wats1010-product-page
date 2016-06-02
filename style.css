@@ -10,6 +10,8 @@ html {
 
 /*Added basic body elements including:font, line height, background color*/
 body {
+  min-width: 1260px;
+  position: relative;
   width: 1260px;
   font-family: optima, segoe, calibri, sans-serif;
   font-size: 18px;
@@ -23,7 +25,7 @@ body {
 /* Add paragraph styling including font, text align etc*/
 
 p {
-  font-size: 15.5px;
+  font-size: 17px;
   font-family: calibri, sans-serif;
   text align: left;
   line-height: 1.18;
@@ -61,8 +63,9 @@ a:visited {
 }
 a:hover, a:focus, a:active {
   text-decoration: underline;
-  color: #591125;
+  color: #313020;
 }
+
 /*End basic elements*/
 
 /* Begin header styling */
@@ -114,60 +117,49 @@ h2.tagline {
   text-decoration: none;
   padding: 10px;
   margin: 0;
-  background-color: #ffffe6;
+  background-color: white;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }
 
 /* End Header styling */
 
+
 /* Begin Footer styling */
+#social {
+  position: absolute;
+    top: 820px;
+    left: 300px;
+  margin: 0;
+  padding: 0;
+}
 
-#footer {
-  clear: both;
-  position: relative;
-  z-index: 2;
-  color: #313020;
-  font-size: 16px;
-  padding: 20px 0 60px 50px;
+ul.share-buttons{
+  list-style: none;
+  padding: 0;
 }
-#footer .social {
-  display: inline-block;
-  margin-bottom: 4px;
-}
-#footer ul li {
-  float: left;
-  list-style-type: none;
-  padding-right: 4px;
-  margin-bottom: 4px;
-}
-#footer .facebook {
-  background-image: url("icons/social_sprites.png") top left no-repeat;
-  height: 20px;
-  width: 22px;
-  display: block;
-  margin-right: 3px;
+
+ul.share-buttons li{
+  display: inline;
 }
 
 
-
-
-
-
-
-
-
-
+/*end Footer styling*/
 
 /*  Begin HOME PAGE styling  */
 
 
 /*Add styling to img wine-sun including position*/
-#image_wrap {
+#image_wrap img {
   position: absolute;
     top: 180px;
-    left: 310px;  
+    left: 310px;
+  opacity: 0.4;
+  width: 960px;
+  height: 620px;
 }
+
+/*Add styling to join the club including float, width, position*/
 .join_us {
   float: left;
   width: 300px;
@@ -178,35 +170,286 @@ h2.tagline {
 .join_us img {
   position: relative;
   margin: 10px 0 10px 0;
-
 }
+/*Add styling to wine club details including width, display, margins, padding */
 .club_details {
   width: 210px;
   height: 400px;
-  display: inline-block;
+  display: inline;
   padding-left: 10px;
 }
 .club_details h2 {
   margin: 5px 0 5px 0;
 }
+.club_details a {
+  width: 50px;
+  height: 25px;
+  display: inline;
+  margin: 10px 3px 0 15px;
+}
+/*Add styling to winery mailings including clear, text alignment, position, display, margin*/
+.mailing {
+ clear: both;
+ text-align: center;
+ position: absolute;
+    top: 750px;
+    left: 10px;
+ display: inline;
+ margin-left: 15px;
+}
+.mailing h2 { 
+  font-size: 25px;
+  text-align: center;
+  margin: 0;
+  padding: 5px;
+
+}
+.mailing p {
+  text-align: center;
+}
+/*Add button styling to below mailing list including background, radius, margin, display, padding*/
+.mailing .join_now {
+  background-color: #591125;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+.mailing .join_now a {
+  color: white;
+}
+
+/*end mailing list styling*/
 
 
+/*Add styling to testimonial including position, font family, font size */
+.testimonials {
+  position: absolute;
+    top: 460px;
+    left: 350px;
+  margin: 0;
+  padding: 0;
+}
+.kudos p {
+  font-family: cursive;
+  font-size: 23px;
+  color: #313020;
+  line-height: 3.15;
+  overflow: auto;
+}
 
 
+/*end styling of HOME.html page */
 
 
+/*begin styling for ABOUT html page*/
+
+/* add positioning to side images*/
+#left img {
+  position: absolute;
+      top: 174px;
+      left: 0;
+}
+
+#right img {
+  position: absolute;
+      top: 174px;
+      left: 1023px;
+      right: 0;
+}
+
+/*add styling to about section including position, line height etc */
+.about {
+  position: absolute;
+      top: 210px;
+      left: 310px;
+}
+.about p {
+  width: 700px;
+  line-height: 1.5;
+}
+
+/*add footer positioning for About Us page*/
+#social_a {
+  position: absolute;
+    top: 600px;
+    left: 300px;
+  margin: 0;
+  padding: 0;
+}
+
+ul.share-buttons{
+  list-style: none;
+  padding: 0;
+}
+
+ul.share-buttons li{
+  display: inline;
+}
+
+/*End ABOUT html page*/
 
 
+/*Begin styling for VINEYARD html page*/
+
+/*add styling to vineyard information including position, width, line height, margin etc */
+.vineyard {
+  position: absolute;
+      top: 210px;
+      left: 310px;
+}
+.vineyard p {
+  width: 700px;
+  line-height: 1.5;
+}
+
+#social_v {
+  position: absolute;
+    top: 1100px;
+    left: 300px;
+  margin: 0;
+  padding: 0;
+}
+
+ul.share-buttons{
+  list-style: none;
+  padding: 0;
+}
+
+ul.share-buttons li{
+  display: inline;
+}
+
+/*End styling of vineyard.html*/
 
 
+/*Begin CLUB html page*/
+
+/*Add styling to wine club page including position, width, line-height etc*/
+.wineclub {
+  position: absolute;
+      top: 210px;
+      left: 310px;
+  width: 650px;
+}
+.wineclub img {
+  margin: 10px;
+  padding: 0;
+  float: left;
+}
+
+.join_club {
+  width: 210px;
+  height: 400px;
+  display: inline;
+  padding-left: 10px;
+}
+.intro {
+  margin: 5px; 
+}
+.intro h2 {
+  margin: 5px 0 5px 0;
+}
+.intro a {
+  width: 50px;
+  height: 25px;
+  display: inline;
+  margin: 10px 3px 0 15px;
+}
+
+.check-list {
+  margin-top: 40px;
+  margin-bottom: 25px;
+  line-height: 1.15;
+}
+/*add styling to enroll button*/
+
+.enroll a {
+  color: white;
+}
+.enroll p {
+  margin: 45px;
+}
+.enroll_now_btn {
+  background-color: #591125;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-decoration: none;
+  display: inline;
+  font-size: 16px;
+  margin: 25px;
+  cursor: pointer;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+.enroll_now_btn a {
+  margin-left: 400px;
+}
+
+/*add footer positioning for Wine Club page*/
+#social_wc {
+  position: absolute;
+    top: 780px;
+    left: 630px;
+  margin: 0;
+  padding: 0;
+}
+
+ul.share-buttons{
+  list-style: none;
+  padding: 0;
+}
+
+ul.share-buttons li{
+  display: inline;
+}
 
 
+/*Add styling to mailing_list html page*/
 
 
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
 
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
 
+input[type=submit]:hover {
+    background-color: #45a049;
+}
 
-
+div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
 
 
 

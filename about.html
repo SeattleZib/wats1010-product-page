@@ -13,22 +13,22 @@ File is based on SMWE wineries websites including Chateau Ste Michelle, Columbia
         <meta name="description" content="A final project for WATS1010 at Seattle University">
         <meta name="keywords" content="Classique Winery, Classique wines, red wine, white wine, Walla Walla">
         <title>Classique Winery</title>
-        <!--Removed bootstrap coding, for now-->
+<!--Removed bootstrap coding, for now-->
       
         <link rel="stylesheet" media="screen" href="style.css">
         <link rel="shortcut icon" href="classique.ico" type="image/x-icon">
-        <link rel="apple-icon" sizes="72x72" href="apple-icon.png">
+        <link rel="apple-icon" sizes="72x72" href="icons/apple-icon.png">
     </head>  
   
-     <!--Begin Body-->
+<!--Begin Body-->
     <body class="primary">
 			
 			<div id="container">
-      <!--Begin Header // Add links, logo -->
-				<section class="heading">
+<!--Begin Header // Add links, logo -->
+				<div class="heading">
 						<header>
 									<div id="logo">
-												<img src="images/logo.png">
+												<img src="images/logo.png" alt="logo">
 									</div>
 									<div id="brand_name">
 												<h1 class="brand">Classique Winery</h1>
@@ -43,19 +43,23 @@ File is based on SMWE wineries websites including Chateau Ste Michelle, Columbia
 												<li><a href="shop.html">Shop</a></li>
 										</ul>
 									</nav>
-					</header>  
-				<!--End Header area-->
+					</header> 
+					</div>
+<!--End Header area-->
     
         
-        
-    	<div id="image-wrap">
+  <!--Page image-->      
+    	<div id="image-wrap1">
       	<div id="content_wrap">
           	<div id="left">
             		<img src="images/winery-image.jpg" width="250" height="400" alt=""/></div>
           	<div id="right">
             		<img src="images/bg_body.jpg" width="250" height="400" alth=""/></div>
       	</div>
-				
+		
+	
+		<!--Section for About Us information-->		
+		<section class="about">	
       <h1>About Us</h1>
 		      <p class="intro">Classique Winery was founded in 1977 as a family-owned estate by John and Jennifer Stephan.  
         Back then, the world was still reeling from news that a California Cabernet Sauvignon has won best in the 
@@ -66,21 +70,30 @@ File is based on SMWE wineries websites including Chateau Ste Michelle, Columbia
         	<p>Our sales team and tasting room employees all come from backgrounds in wine and culinary arts.  They will be happy to help 
         you pair your favorite dish with a bottle of Classique Wines.</p>
           <p>Enjoy!</p>
+			</section>
     </div>
 
             
-   <div id="footer">
+   <!--Begin footer-->
+      
+       <div class="footer">
+				 
+				 	<aside id="social_a">
+    					<ul class="share-buttons">
+  									<li><a href="https://www.facebook.com/sharer/sharer.php?u=&t=" title="Share on Facebook" target="_blank">
+												<img src="images/flat_web_icon_set/color/Facebook.png"></a></li>
+										<li><a href="https://twitter.com/intent/tweet?source=&text=:%20" target="_blank" title="Tweet">
+												<img src="images/flat_web_icon_set/color/Twitter.png"></a></li>
+										<li><a href="http://www.tumblr.com/share?v=3&u=&t=&s=" target="_blank" title="Post to Tumblr">	
+												<img src="images/flat_web_icon_set/color/Tumblr.png"></a></li>
+										<li><a href="http://pinterest.com/pin/create/button/?url=&description=" target="_blank" title="Pin it">
+												<img src="images/flat_web_icon_set/color/Pinterest.png"></a></li>
+							</ul>
+					</aside>
 
-	      <ul class="social">
-            <li><a href="http://www.facebook.com" target="_blank" class="facebook">Facebook</a></li>
-            <li><a href="http://www.twitter.com" target="_blank" class="twitter">Twitter</a></li>
-            <li><a href="http://www.youtube.com" target="_blank" class="youtube">YouTube</a></li>
-            <li><a href="mailing-list.html" class="mailingList">Join Our Mailing List</a></li>
-	      </ul>
-   </div>
-        
-      <div id="responsibility">
-      </div>
+				</div>
+     
+      <!--End footer-->      
              
 
     </body>
