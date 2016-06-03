@@ -144,7 +144,7 @@ a:focus {
 
 
 /* Begin Footer styling */
-.footer {
+.footer_main {
   position: absolute;
     top: 890px;
     left: 30px;
@@ -152,7 +152,7 @@ a:focus {
   padding: 0; 
 }
 
-#social {
+.social_main {
   margin-left: 40px;
 }
 
@@ -173,7 +173,7 @@ ul.share-buttons li{
 /*Add styling to img wine-sun including position*/
 .main_content {
   width: 100%;
-  height: 780px;
+  height: 100%;
   background-color: #D4D495;
 }
 .main_background {
@@ -212,7 +212,7 @@ ul.share-buttons li{
   height: 430px;
   display: inline;
   margin-right: 8px;
-  padding-left: 3px;
+  padding-left: 0;
   background-color: white;
   color: #591125;
 }
@@ -321,15 +321,15 @@ ul.share-buttons li{
 /*begin styling for ABOUT html page*/
 
 /* add positioning to side images*/
-#left img {
+.left img {
   position: absolute;
-      top: 174px;
+      top: 195px;
       left: 0;
 }
 
-#right img {
+.right img {
   position: absolute;
-      top: 174px;
+      top: 195px;
       left: 1023px;
       right: 0;
 }
@@ -346,21 +346,16 @@ ul.share-buttons li{
 }
 
 /*add footer positioning for About Us page*/
-#social_a {
+.footer_a {
   position: absolute;
     top: 600px;
-    left: 300px;
-  margin: 0;
-  padding: 0;
+    left: 30px;
+  margin: 20px;
+  padding: 0; 
 }
 
-ul.share-buttons{
-  list-style: none;
-  padding: 0;
-}
-
-ul.share-buttons li{
-  display: inline;
+.social_a {
+  margin-left: 40px;
 }
 
 /*End ABOUT html page*/
@@ -379,22 +374,18 @@ ul.share-buttons li{
   line-height: 1.5;
 }
 
-#social_v {
+.footer_v {
   position: absolute;
-    top: 1100px;
-    left: 300px;
-  margin: 0;
-  padding: 0;
+    top: 600px;
+    left: 30px;
+  margin: 20px;
+  padding: 0; 
 }
 
-ul.share-buttons{
-  list-style: none;
-  padding: 0;
+.social_v {
+  margin-left: 40px;
 }
 
-ul.share-buttons li{
-  display: inline;
-}
 
 /*End styling of vineyard.html*/
 
@@ -413,30 +404,23 @@ ul.share-buttons li{
   padding: 0;
   float: left;
 }
-
 .join_club {
   width: 210px;
   height: 400px;
   display: inline;
   padding-left: 10px;
 }
-.intro {
-  margin: 5px; 
+.joinclub h2 {
+  font-family: cursive;
 }
-.intro h2 {
-  margin: 5px 0 5px 0;
+.join_club p {
+  color: #591125;
 }
-.intro a {
-  width: 50px;
-  height: 25px;
-  display: inline;
-  margin: 10px 3px 0 15px;
-}
-
 .check-list {
   margin-top: 40px;
   margin-bottom: 25px;
   line-height: 1.15;
+  color: #591125;
 }
 /*add styling to enroll button*/
 
@@ -452,7 +436,6 @@ ul.share-buttons li{
   color: white;
   padding: 15px 32px;
   text-decoration: none;
-  display: inline;
   font-size: 16px;
   margin: 25px;
   cursor: pointer;
@@ -461,27 +444,40 @@ ul.share-buttons li{
   border-bottom-right-radius: 15px;
   border-bottom-left-radius: 15px;
 }
-.enroll_now_btn a {
-  margin-left: 400px;
-}
+
 
 /*add footer positioning for Wine Club page*/
-#social_wc {
+
+.footer_wc {
   position: absolute;
-    top: 780px;
-    left: 630px;
+    top: 600px;
+    left: 30px;
+  margin: 20px;
+  padding: 0;  
+}
+
+.social_wc {
   margin: 0;
   padding: 0;
 }
 
-ul.share-buttons{
-  list-style: none;
+/*Add styling to SHOP html page*/
+
+
+.footer_shop {
+  position: absolute;
+    top: 200px;
+    left: 30px;
+  margin: 20px;
+  padding: 0;  
+}
+
+.social_shop {
+  margin: 0;
   padding: 0;
 }
 
-ul.share-buttons li{
-  display: inline;
-}
+
 
 
 /*Add styling to mailing_list html page*/
