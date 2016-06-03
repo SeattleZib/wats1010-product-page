@@ -10,16 +10,14 @@ html {
 
 /*Added basic body elements including:font, line height, background color*/
 body {
-  min-width: 1260px;
-  position: relative;
-  width: 1260px;
+  min-width: 1100px;
+  height: 980px;
   font-family: optima, segoe, calibri, sans-serif;
   font-size: 18px;
   color: #8B8B3F;
   line-height: 1.15;
   margin: 2px;
   padding-bottom: 10px;
-  background-color: #d4d495;
 }
 
 /* Add paragraph styling including font, text align etc*/
@@ -35,6 +33,7 @@ p {
 
 /* Add h1 and h2 styling including style, size, color, etc*/
 h1 {
+  font-family: cursive, fantasy;
   font-size: 36px;
   font-style: italic;
   margin: 0;
@@ -61,53 +60,72 @@ a:visited {
   text-decoration: underline;
   color: #8F5A69;
 }
-a:hover, a:focus, a:active {
+a:active {
   text-decoration: underline;
   color: #313020;
 }
+a:hover {
+  text-decoration: underline;
+  color: #8F5A69;
+}
+a:focus {
+  text-decoration: underline;
+  color: #CDB8BE
+}
+
 
 /*End basic elements*/
 
 /* Begin header styling */
 
 /*Add container position and margin*/
-div#container {
-  min-width: 1100px;
-  position: relative;
+.container {
+ position: relative;
+  width: 100%;
+  height: 980px;
+  background-color: white;
 }
 
-/*Add styling to heading including height and background color*/
+/*Add styling to heading including width, height and background color*/
 .heading {
-  position: relative;
-  z-index: 100;
-  width: 1270px;
-  height: 175px;
-  margin: 0;
+  width: 100%;
+  height: 190px;
   padding: 0;
   background-color: #8B8B3F;
 }
 /*Add styling to logo including float, position, margins*/
-div#logo {
-  float: left;
-  position: relative;
-  margin: 20px 10px 0 0;
+.logo {
+  margin-top: 5px;
   padding; 0;
+  background-color: #8B8B3F;
 }
+
 /*Add styling to h1/h2 including margins, text indent*/
-h1.brand {
-  text-indent: 30px;
-  padding: 0;
+
+.brand_name {
+  background-color: #8B8B3F;
+  position: absolute;
+    top: 30px;
+    left: 180px;
 }
-h2.tagline {
+.brand_name h1 {
+  font-family: cursive, fantasy;
+  text-indent: 30px;
+  padding: 10px;
+  background-color: #8B8B3F;
+}
+.brand_name h2 {
   text-indent: 80px;
-  margin-top: 8px;
+  margin: 0;
   padding: 0;
+  background-color: #8B8B3F;
 }
 /*Add navigation styling including list style type, margins, text align, display*/
 
 .navigation {
   list-style-type: none;
-  margin: 68px 0 10px 810px;
+  margin-top: 0px;
+  margin-left: 810px;
   padding: 0;
 }
 .navigation li {
@@ -126,19 +144,22 @@ h2.tagline {
 
 
 /* Begin Footer styling */
-#social {
+.footer {
   position: absolute;
-    top: 820px;
-    left: 300px;
-  margin: 0;
-  padding: 0;
+    top: 890px;
+    left: 30px;
+  margin: 20px;
+  padding: 0; 
+}
+
+#social {
+  margin-left: 40px;
 }
 
 ul.share-buttons{
   list-style: none;
   padding: 0;
 }
-
 ul.share-buttons li{
   display: inline;
 }
@@ -150,42 +171,73 @@ ul.share-buttons li{
 
 
 /*Add styling to img wine-sun including position*/
-#image_wrap img {
-  position: absolute;
-    top: 180px;
-    left: 310px;
-  opacity: 0.4;
-  width: 960px;
-  height: 620px;
+.main_content {
+  width: 100%;
+  height: 780px;
+  background-color: #D4D495;
 }
-
+.main_background {
+  background-image: url("images/wine-sun3.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+    top: 195px;
+    left: 330px;
+  width: 930px;
+  height: 740px;
+  z-index: 0;
+}
+.content-wrap {
+  margin: 0;
+  padding: 0;
+}
 /*Add styling to join the club including float, width, position*/
 .join_us {
+ position: absolute;
+    top: 196px;
+    left: 0;
   float: left;
   width: 300px;
   margin: 5px;
   text-align: center;
   color: #8B8B3F;
+  z-index: 9;
 }
 .join_us img {
-  position: relative;
-  margin: 10px 0 10px 0;
+  margin: 0;
 }
 /*Add styling to wine club details including width, display, margins, padding */
 .club_details {
-  width: 210px;
-  height: 400px;
+  width: 93px;
+  height: 430px;
   display: inline;
-  padding-left: 10px;
+  margin-right: 8px;
+  padding-left: 3px;
+  background-color: white;
+  color: #591125;
 }
 .club_details h2 {
   margin: 5px 0 5px 0;
 }
+.club_details p {
+  overflow: visible;
+}
 .club_details a {
-  width: 50px;
-  height: 25px;
-  display: inline;
-  margin: 10px 3px 0 15px;
+  width: 90px;
+  margin: 5px 0 0 0px;
+  padding: 15px 32px;
+  background-color: #591125;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: underline;
+  font-size: 16px;
+  font-family: cursive fantasy;
+  cursor: pointer;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
 }
 /*Add styling to winery mailings including clear, text alignment, position, display, margin*/
 .mailing {
@@ -202,7 +254,6 @@ ul.share-buttons li{
   text-align: center;
   margin: 0;
   padding: 5px;
-
 }
 .mailing p {
   text-align: center;
@@ -234,19 +285,35 @@ ul.share-buttons li{
 /*Add styling to testimonial including position, font family, font size */
 .testimonials {
   position: absolute;
-    top: 460px;
-    left: 350px;
+    top: 600px;
+    left: 340px;
   margin: 0;
   padding: 0;
+  z-index: 0;
 }
 .kudos p {
   font-family: cursive;
-  font-size: 23px;
+  font-size: 18px;
   color: #313020;
   line-height: 3.15;
   overflow: auto;
 }
-
+.kudos a {
+  float: right;
+  background-color: #8B8B3F;
+  border: none;
+  color: white;
+  padding: 12px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
 
 /*end styling of HOME.html page */
 
@@ -445,11 +512,7 @@ input[type=submit]:hover {
     background-color: #45a049;
 }
 
-div {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
-}
+
 
 
 
