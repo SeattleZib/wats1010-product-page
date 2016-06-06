@@ -279,7 +279,7 @@ ul.share-buttons li{
   color: white;
 }
 
-/*end mailing list styling*/
+/*end join styling*/
 
 
 /*Add styling to testimonial including position, font family, font size */
@@ -482,35 +482,36 @@ ul.share-buttons li{
 
 /*Add styling to mailing_list html page*/
 
+/*Add styling to form input*/
 
-input[type=text], select {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
+.wc_list {
+  position: absolute;
+    top: 225px;
+    left: 320px; 
+  width: 640px;
+  margin: 10px;
 }
 
-input[type=submit] {
-    width: 100%;
-    background-color: #4CAF50;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-input[type=submit]:hover {
-    background-color: #45a049;
+.wc_list h1 {
+text-align: center;
 }
 
 
 
 
+
+
+.footer_ml {
+  position: absolute;
+    top: 400px;
+    left: 30px;
+  margin: 20px;
+  padding: 0; 
+}
+
+.social_ml {
+  margin-left: 40px;
+}
 
 
 
